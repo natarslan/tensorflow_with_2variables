@@ -69,8 +69,7 @@ with tf.Session() as sess:
     training_cost = sess.run(cost, feed_dict={X: train_X, Y: train_Y})
     print("Training cost=", training_cost, "W=", sess.run(W), "b=", sess.run(b), '\n')
     
-    print ("W1=",sess.run(W1))
-    print ("W2=",sess.run(W2))
+    print ("W=",sess.run(W))
     print ("b=",sess.run(b))
  
     #Graphic display
